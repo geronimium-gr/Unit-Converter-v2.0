@@ -1,0 +1,234 @@
+*
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body
+{
+    background-color: white;
+}
+
+h2
+{
+    text-align: center;
+}
+
+/* Simple Header for mobile */
+.sm-header
+{
+    display: none;
+}
+
+/* Header */
+.header 
+{
+    padding: 5px;
+    text-align: center;
+    color: black;
+}
+  
+  /* Increase the font size of the heading */
+.header h1 
+{
+    font-size: 50px;
+}
+  
+  /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar 
+{
+    overflow: hidden;
+    background: #90bcf5;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+  
+  /* Style the navigation bar links */
+.navbar a 
+{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+   
+  /* Right-aligned link */
+.navbar a.right 
+{
+    float: right;
+    z-index: 1;
+}
+  
+  /* Change color on hover */
+.navbar a:hover 
+{
+    background-color: #32527B;
+    color: white;
+    z-index: 1;
+}
+
+/* Active/current link */
+.navbar a.active 
+{
+    background-color: #32527B;
+    color: white;
+}
+
+
+/*Units Container*/
+.xop-section
+{
+    max-width: 1500px;
+    margin: 0 auto; 
+}
+
+/*List of Units*/
+.xop-grid
+{
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;         
+    width: 100%;
+}
+
+.xop-grid:after
+{
+    clear: both;
+}
+
+.xop-grid:after, .xop-box:before
+{
+    content: '';
+    display: table;
+}
+
+.xop-grid li
+{
+    width: 400px;
+    height: 200px;
+    display: inline-block;
+    margin: 20px;
+}
+
+/*Container of Images and Label*/
+.xop-box
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out
+    transform 0.3s ease-in-out;
+}
+
+.xop-box:hover
+{
+    transform: scale(1.05);
+}
+
+/*Images of Units*/
+.xop-img-1
+{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),
+    url(../img/angle.jpg);
+}
+
+.xop-img-2
+{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.10)),
+    url(../img/area.jpg);
+}
+
+.xop-img-3
+{
+    background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.10)),
+    url(../img/length.jpg);
+}
+
+.xop-img-4
+{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+    url(../img/temp.jpg);
+}
+
+.xop-img-5
+{
+    background: linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.10)),
+    url(../img/time.jpg);
+}
+
+.xop-img-6
+{
+    background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.10)),
+    url(../img/mass.jpg);
+    
+}
+
+/*Info or Label*/
+.xop-info, .xop-info2, .xop-info3
+{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+/* To all labels in h3 */
+.xop-info h3, .xop-info2 h3, .xop-info3 h3
+{
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 42px;
+    margin: 0 30px;
+    line-height: 1.5;
+}
+
+/*Temperature*/
+.xop-info h3
+{
+    padding: 50px 90px 80px 0;
+    /* border: solid blue; */
+}
+
+/* Length & Weight */
+.xop-info2 h3
+{
+    padding: 50px 200px 80px 0;
+    /* border: solid red; */
+}
+
+/*Others*/
+.xop-info3 h3
+{
+    padding: 50px 220px 80px 0;
+    /* border: solid green; */
+}
+
+@media screen and (max-width: 500px) 
+{
+    
+    .header, .navbar{
+        display: none;
+    }
+
+    /* Simple Header for mobile */
+    .sm-header{
+        display: inline;
+        text-align: center;
+    }
+
+    h2{
+        display: none;
+    }
+
+}

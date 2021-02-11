@@ -1,0 +1,10 @@
+<svg id="_2d" data-name=" 2d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.76 52.76">
+  <title>circle_area</title>
+  <circle cx="26.38" cy="26.38" r="25.38" style="fill: #ffd3ff;stroke: #f0f;stroke-width: 2px"/>
+  <path d="M27.5,27.5H51.92" transform="translate(-1.12 -1.12)" style="fill: none;stroke: #f0f;stroke-width: 2px"/>
+  <g id="r" style="isolation: isolate">
+    <g style="isolation: isolate">
+      <path d="M34.54,32.06h1v.64A1.85,1.85,0,0,1,36.9,32v.94a1.26,1.26,0,0,0-.3,0,1.49,1.49,0,0,0-1.11.58v3h-1Z" transform="translate(-1.12 -1.12)" style="fill: #474747"/>
+    </g>
+  </g>
+</svg>

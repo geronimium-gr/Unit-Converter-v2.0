@@ -1,0 +1,692 @@
+*
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: white;
+}
+
+/*Header*/
+h1
+{
+    font-weight: bolder;
+    font-size: 50px;        
+    color: white;
+    text-align: center;
+}
+
+header
+{
+    padding: 1px;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('../img/area.jpg');
+    color: white;
+    background-size: 505px 505px;
+}
+
+/* Navbar in mobile */
+.sm-navbar
+{
+    overflow: hidden;
+    background-color: #90bcf5;
+}
+
+.sm-navbar a
+{
+    float: left; 
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.dropdown
+{
+    float: left;
+    overflow: hidden;
+    
+}
+
+.dropdown .dropbtn
+{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.sm-navbar a:hover, .dropdown:hover
+{
+    background-color: #32527B;
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a
+{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover
+{
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+/* Deactivate Navbar for mobile */
+.sm-navbar
+{
+    display: none;
+}
+
+/*Links in Nav*/
+.navbar 
+{
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #90bcf5;
+    z-index: 1;
+}
+  
+  /* Style the navigation bar links */
+.navbar a 
+{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    z-index: 1;
+    font-weight: bold;
+}
+  
+  
+  /* Right-aligned link */
+.navbar a.right 
+{
+    float: right;
+    z-index: 1;
+}
+  
+  /* Change color on hover */
+.navbar a:hover 
+{
+    background-color: #32527B;
+    color: white;
+    z-index: 1;
+}
+
+/* Active/current link */
+.navbar a.active 
+{
+    background-color: #32527B;
+    color: white;
+}
+
+/* Container of contents */
+.row 
+{  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+.side 
+{
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: white;
+    padding: 20px;
+}
+  
+  /* Main column */
+.main 
+{   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    margin: 15px 0 0 0;
+}
+
+/* Key Concepts will stick. */
+div.sticky-box
+{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 40px;
+}
+
+/* Key Concepts */
+/* From FormGet.com */
+.key-concepts
+{
+    margin: 0 auto;
+}
+
+.key-concepts tr, .key-concepts a
+{
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-family: 'Raleway', sans-serif;
+    transition: background-color 1.5s ease;
+}
+
+.key-concepts th
+{
+    background: white;
+}
+
+.key-concepts tr
+{
+    background: #0089e0;
+    
+}
+
+.key-concepts a
+{
+    padding: 9px 100px 8px 15px;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.key-concepts a:before
+{
+    content: "";
+    float: left;
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 0;
+    height: 0;
+    border-color: transparent #0089e0 transparent transparent;
+    border-style: solid;
+    border-width: 18px 12px 18px 0;
+}
+
+.key-concepts a:after
+{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    float: left;
+    width: 6px;
+    height: 6px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #fff;
+    -moz-box-shadow: -1px -1px 2px #004977;
+    -webkit-box-shadow: -1px -1px 2px #004977;
+    box-shadow: -1px -1px 2px #004977;
+}
+
+.key-concepts tr:hover
+{
+    background: #555;
+}
+
+.key-concepts tr:hover:before
+{
+    border-color: transparent #0089e0 transparent transparent;
+}
+
+
+/* Information in main */
+p
+{
+    text-align: justify;
+}
+
+section
+{
+    margin: 5px 0 30px 0 ;
+}
+
+/* Images  */       
+.angle-image-1
+{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 10px 0;
+}
+
+/* To put figure inside by Danield */
+.img-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+/* Title of every section */
+.title
+{
+    position: relative;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em;
+    background: #93c775;
+    -moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    border-radius: 10em;
+    transition: all .2s ease-in-out;
+}
+
+.title:before
+{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #93c775;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    color: #93c775;
+}
+
+/* Angle Table from The WebShala */
+.angle-table
+{
+    border-collapse: collapse;
+    width: 100%;
+    /* margin: 20px 0; */
+}
+
+.angle-table th, .angle-table td
+{
+    /* text-align: left;
+    padding: 8px; */
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.angle-table th
+{
+    background-color: #93c775;
+}
+
+.angle-table tbody tr:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
+
+/*Inputs - w3schools.com*/
+input[type=number]
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 20px;
+}
+
+label
+{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.container
+{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25
+{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.col-75
+{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.form-row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* References */
+.ref-links a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.ref-links a:hover
+{
+    text-decoration: underline;
+}
+
+/* Footer by CodingNepal */
+footer
+{
+    bottom: 0px;
+    width: 100%;
+    background:#f2f2f2;
+}
+
+.main-content
+{
+    display: flex;
+}
+
+.main-content .box
+{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2
+{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content
+{
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box .content:before
+{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #f2f2f2;
+}
+
+.box .content:after
+{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 15%;
+    background: #93c775;
+}
+
+.center .content .symbol
+{
+    font-size: 1.4375rem;
+    background: #93c775;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    padding: 5px 9px;
+    cursor: default;
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.center .content .symbol-flag
+{
+    font-size: 1.4375rem;
+    background: #93c775;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    padding: 5px 11px;
+    cursor: default;
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.center .content .text
+{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+    margin: 0 0 5px 0;
+}
+
+.right form .text
+{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+.right form .msg 
+{
+    margin-top: 10px;
+}
+
+.right form input, .right form #msgForm
+{
+    width: 100%;
+    font-size: 1.0625rem;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.right form input:focus, .right form #msgForm:focus
+{
+    outline-color: #3498db;
+}
+
+.right form input
+{
+    height: 35px;
+}
+
+.right form .btn 
+{
+    margin-top: 10px;
+}
+
+.right form .btn button
+{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #93c775;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.right form .btn button:hover
+{
+    background: #9fca86;
+}
+
+.bottom center
+{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #e6e4e4;
+}
+
+.bottom center span
+{
+    color: #656565;
+}
+
+.bottom center a
+{
+    color: #6e9e52;
+    text-decoration: none;
+}
+
+.bottom center a:hover
+{
+    text-decoration: underline;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 900px) 
+{
+    footer{
+        position: relative;
+        bottom: 0;
+    }
+
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .main-content .box{
+        margin: 5px 0;
+    }
+
+    .navbar
+    {
+        display: none;
+    }
+
+    .sm-navbar
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) 
+{
+    .row {   
+      flex-direction: column;
+    }
+
+    .key-concepts {
+        margin: 0 auto;
+    }
+
+    .key-concepts th {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px)
+{
+    p{
+        font-size: 20px;
+    }
+
+    .angle-table thead{
+        display: none;
+    }
+
+    .angle-table, .angle-table tbody, .angle-table tr, .angle-table td{
+        display: block;
+        width: 100%;
+    }
+
+    .angle-table tr{
+        margin-bottom: 15px;
+    }
+
+    .angle-table td{
+        text-align: right;
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+    }
+
+    .angle-table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .col-25, .col-75{
+        width: 100%;
+        margin-top: 0;
+        font-size: 15px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    /* .navbar{
+        display: none;
+    } */
+
+}
+

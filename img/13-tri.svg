@@ -1,0 +1,17 @@
+<svg id="_2d" data-name=" 2d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.27 50.02">
+  <title>triangle_area</title>
+  <g>
+    <path id="Polygon_1" data-name="Polygon 1" d="M27.59,4.4,51.48,44.73H3.71Z" transform="translate(-1.96 -2.43)" style="fill: #ffddaf;stroke: #f89819;stroke-width: 2px;fill-rule: evenodd"/>
+    <path d="M27.49,4.22,27.85,45" transform="translate(-1.96 -2.43)" style="fill: none;stroke: #f89819;stroke-width: 2px"/>
+    <g id="b" style="isolation: isolate">
+      <g style="isolation: isolate">
+        <path d="M26.3,46.34h.94V48.6a1.72,1.72,0,0,1,1.4-.71c1.11,0,1.92.88,1.92,2.29s-.82,2.28-1.92,2.28a1.73,1.73,0,0,1-1.4-.71v.6H26.3Zm2.06,5.28a1.46,1.46,0,0,0,0-2.89,1.44,1.44,0,0,0-1.12.59V51A1.4,1.4,0,0,0,28.36,51.62Z" transform="translate(-1.96 -2.43)" style="fill: #474747"/>
+      </g>
+    </g>
+    <g id="h" style="isolation: isolate">
+      <g style="isolation: isolate">
+        <path d="M34.43,35.83c0-.68-.35-.89-.88-.89a1.47,1.47,0,0,0-1.12.59v3h-.94v-6h.94v2.25a2.1,2.1,0,0,1,1.54-.7,1.24,1.24,0,0,1,1.41,1.37v3.08h-1Z" transform="translate(-1.96 -2.43)" style="fill: #474747"/>
+      </g>
+    </g>
+  </g>
+</svg>
