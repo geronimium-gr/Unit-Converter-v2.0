@@ -1,4 +1,4 @@
-//For Angles
+//For Angles ELements
 const deg = document.getElementById('deg');
 const rad = document.getElementById('rad');
 const gra = document.getElementById('gra');
